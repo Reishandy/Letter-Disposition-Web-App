@@ -1,0 +1,64 @@
+:root {
+    --color_main_accent: #3D5B6C;
+    --color_secondary_accent: #BD9177;
+    --color_background: #FFFFFF;
+}
+
+body {
+    background: url("../img/bg.webp") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    justify-content: flex-end;
+
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--color_main_accent);
+}
+
+.form-container {
+    background-color: var(--color_background);
+    box-shadow: 0 0 250px 300px var(--color_background);
+
+    width: 100%;
+    text-align: center;
+}
+
+.form-def {
+    opacity: 0;
+}
+
+.form-def h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.form-def h5 {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: default;
+
+    margin-top: 0.5em;
+
+    color: var(--color_secondary_accent);
+}
+
+.form-def button {
+    margin-top: 0.5em;
+
+    color: var(--color_main_accent);
+    border-color: var(--color_main_accent);
+}
+
+.form-def button:hover {
+    background-color: var(--color_main_accent);
+    color: var(--color_background);
+}
+
+.form-def h6 {
+    margin-top: 2em;
+}
