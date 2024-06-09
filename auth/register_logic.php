@@ -18,7 +18,7 @@ if ($stmt->get_result()->num_rows > 0) {
 }
 
 // Hash the password
-$hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+$hashedPassword = password_hash($password, PASSWORD_BCRYPT);
 
 // Add the user to the database
 $query = "INSERT INTO users (username, email, password) VALUES (?, ?, ?)";
