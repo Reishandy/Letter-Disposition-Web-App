@@ -1,7 +1,7 @@
 // --- ANIMATIONS ---
 // -- ONLOAD ANIMATION
 window.onload = () => {
-    pageOpen()
+    loginRegisterOpen()
 }
 
 // -- BUTTON ANIMATION
@@ -36,24 +36,16 @@ function shrink(element) {
 }
 
 // -- FORM ANIMATION
-function pageOpen() {
+function loginRegisterOpen() {
     let form = document.getElementsByClassName('form-def');
     let container = document.getElementsByClassName('form-container');
 
     // INFO: the original value is in login_register.css
-
     anime({
         targets: form,
-        scale: 0.2,
-        opacity: 0,
-        duration: 0,
-    })
-
-    anime({
-        targets: form,
-        scale: 1,
-        opacity: 1,
-        duration: 1400,
+        scale: [0, 1],
+        opacity: [0, 100],
+        duration: 1000,
         easing: 'easeOutQuad'
     })
 
@@ -66,7 +58,7 @@ function pageOpen() {
     })
 }
 
-function pageClose() {
+function loginRegisterClose() {
     let form = document.getElementsByClassName('form-def');
     let container = document.getElementsByClassName('form-container');
 

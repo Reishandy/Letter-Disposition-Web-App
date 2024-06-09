@@ -5,7 +5,7 @@ window.history.replaceState({}, document.title, "login.php");
 let registerLink = document.getElementById('link');
 
 registerLink.addEventListener('click', () => {
-    pageClose()
+    loginRegisterClose()
 
     setTimeout(() => {
         window.location.href = 'register.php'
@@ -21,7 +21,7 @@ loginForm.addEventListener('submit', (e) => {
 
     // Check if the form is valid with bootstrap
     if (loginForm.checkValidity()) {
-        pageClose()
+        loginRegisterClose()
 
         setTimeout(() => {
             loginForm.submit()

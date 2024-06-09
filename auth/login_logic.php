@@ -30,7 +30,5 @@ if (!password_verify($password, $hashedPassword)) {
 session_start();
 $_SESSION['user'] = $username;
 
-var_dump($_SESSION);
-
 // Redirect to the home page
-echo '<script>window.location.replace("../app/index.php") </script>';
+echo '<script>window.location.replace("../app/app.php") </script>';

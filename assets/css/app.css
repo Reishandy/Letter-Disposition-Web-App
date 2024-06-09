@@ -1,0 +1,126 @@
+:root {
+    --color_main_accent: #3D5B6C;
+    --color_secondary_accent: #E1C3A1;
+    --color_background: #FFFFFF;
+}
+
+body {
+    background: url("../img/bg.webp") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--color_main_accent);
+}
+
+.div-centered {
+    background-color: var(--color_background);
+    box-shadow: 0 0 150px 200px var(--color_background);
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+}
+
+.content {
+    opacity: 0;
+}
+
+.content h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.content h6 {
+    margin-top: 2em;
+}
+
+nav {
+    color: var(--color_background) !important;
+    background-color: var(--color_main_accent);
+    border-radius: 10px;
+    border: 2px solid var(--color_main_accent);
+
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+nav .dropdown-item {
+    color: var(--color_main_accent) !important
+}
+
+nav .dropdown-item:hover {
+    color: red !important;
+}
+
+nav button {
+    margin-right: 1em;
+}
+
+nav button:hover {
+    background-color: var(--color_background);
+    color: var(--color_main_accent) !important;
+}
+
+.div-letters {
+    border-radius: 10px;
+    border: 2px solid var(--color_main_accent);
+
+    padding: 1.5em 0 1.5em 0;
+
+    height: 70vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color_main_accent) var(--color_background);
+}
+
+.div-letter {
+    border-radius: 10px;
+    border: 2px solid var(--color_main_accent);
+
+    padding: 0;
+    overflow: auto;
+    opacity: 0;
+
+    height: 40%;
+    width: 30%;
+}
+
+.div-letter .card-header {
+    color: var(--color_background);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div-letter .card-header h4 {
+    font-size: 1em;
+}
+
+.div-letter .card-header h6 {
+    font-size: 0.8em;
+}
+
+.div-letter .card-body {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+}
+
+.div-letter a {
+    margin: 1em 1em 0 1em;
+}
+
+.div-letter a:hover {
+    background-color: var(--color_main_accent);
+    color: var(--color_background);
+}
+

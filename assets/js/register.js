@@ -21,7 +21,7 @@ document.getElementById('passwdConfirm').addEventListener('change', checkPasswor
 let registerLink = document.getElementById('link');
 
 registerLink.addEventListener('click', () => {
-    pageClose()
+    loginRegisterClose()
 
     setTimeout(() => {
         window.location.href = 'login.php'
@@ -37,7 +37,7 @@ registerForm.addEventListener('submit', (e) => {
 
     // Check if the form is valid with bootstrap
     if (registerForm.checkValidity()) {
-        pageClose()
+        loginRegisterClose()
 
         setTimeout(() => {
             registerForm.submit()

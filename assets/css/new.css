@@ -1,0 +1,33 @@
+.div-form {
+    border-radius: 10px;
+    border: 2px solid var(--color_main_accent);
+
+    padding: 3em;
+}
+
+.div-form h4 {
+    font-size: 2em;
+    font-weight: bold;
+
+    margin-bottom: 1em;
+}
+
+.div-form button {
+    color: var(--color_main_accent);
+    background-color: var(--color_background);
+    border: 2px solid var(--color_main_accent);
+    border-radius: 10px;
+}
+
+.div-form button:hover {
+    color: var(--color_background) !important;
+    background-color: var(--color_main_accent);
+}
+
+.div-form form {
+    width: 80vh;
+}
+
+.div-form .alert {
+    width: 80vh;
+}
