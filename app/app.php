@@ -47,8 +47,7 @@ $username = $_SESSION['user'];
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <button id="logout" class="dropdown-item" href="../auth/logout.php">Logout
-                                        </button>
+                                        <button id="logout" class="dropdown-item">Logout</button>
                                     </li>
                                 </ul>
                             </li>

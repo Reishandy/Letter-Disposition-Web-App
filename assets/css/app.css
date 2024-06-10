@@ -82,6 +82,20 @@ nav button:hover {
     scrollbar-color: var(--color_main_accent) var(--color_background);
 }
 
+/* For Chrome, Safari, and Edge */
+.div-letters::-webkit-scrollbar {
+    width: 8px;
+}
+
+.div-letters::-webkit-scrollbar-track {
+    background: var(--color_background);
+}
+
+.div-letters::-webkit-scrollbar-thumb {
+    background-color: var(--color_main_accent);
+    border-radius: 20px;
+}
+
 .div-letter {
     border-radius: 10px;
     border: 2px solid var(--color_main_accent);

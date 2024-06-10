@@ -5,7 +5,7 @@ let logout = document.getElementById('logout');
 logout.addEventListener('click', () => {
     appClose()
     setTimeout(() => {
-        window.location.href = '../auth/login.php'
+        window.location.href = '../auth/logout.php'
     }, 800)
 });
 
@@ -152,6 +152,15 @@ function lettersOpen() {
     for (let i = 0; i < letters.length; i++) {
         observer.observe(letters[i]);
     }
+}
+
+// -- UPLOAD ANIMATION
+let submitButton = document.getElementById('submit-button')
+
+if (submitButton) {
+    submitButton.addEventListener('click', function() {
+        submitButton.innerHTML = ' <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span> Uploading...';
+    });
 }
 
 // -- ETC

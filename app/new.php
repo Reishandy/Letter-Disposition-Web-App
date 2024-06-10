@@ -48,8 +48,7 @@ $username = $_SESSION['user'];
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li>
-                                        <button id="logout" class="dropdown-item" href="../auth/logout.php">Logout
-                                        </button>
+                                        <button id="logout" class="dropdown-item">Logout</button>
                                     </li>
                                 </ul>
                             </li>
@@ -148,7 +147,8 @@ $username = $_SESSION['user'];
                         </div>
                     </div>
 
-                    <button type="submit" class="btn btn-outline-light btn-lg" name="submit" value="submit">Submit
+                    <button id="submit-button" type="submit" class="btn btn-outline-light btn-lg" name="submit"
+                            value="submit">Submit
                     </button>
                 </form>
             </div>
